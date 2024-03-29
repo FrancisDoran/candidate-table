@@ -1,1 +1,1 @@
-Filler Nid,FPPC ID,Filer Name,Filer Type,Status,Is Terminated,City,State,Zip,Candidate Name,officeName,committeeName,election_name,election year,treasurer
+,candidate_name,office_name,committee_name,election_name,filler_nid,election_year,fppc_id,treasurer,is_terminated,status,filer_name,filer_type,city,state,zip
