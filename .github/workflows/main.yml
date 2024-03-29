@@ -23,8 +23,8 @@ jobs:
         pip install -r requirements.txt
     - name: Update Socrata
       run: |
-        python -m create_table.py
-        python -m update-socrata.py
+        python -m create_table
+        python -m update-socrata
       env: 
         API_KEY: ${{secrets.NETFILE_API_KEY}}
         API_SECRET: ${{secrets.NETFILE_API_SECRET}}
