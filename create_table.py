@@ -296,7 +296,7 @@ df5 = df4.merge(treasurer_df, how='left',on=['fppc_id','filerNid'])
 # merge status and location with filer id as key
 df6 = df5.merge(status_address_df, how='left',on=['filerNid'])
 # rename columns for consistent style
-df6.columns = ['Candidate Name','Office Name', 'Committee Name', 'Election Name', 'Filler Nid', 'Election Year', 'FPPC ID', 'Treasurer', 'Is Terminated', 'Status', 'Filer Name', 'Filer Type', 'City', 'State', 'Zip']
+df6.columns = ['candidate_name','office_name', 'committee_name', 'election_name', 'filler_nid', 'election_year', 'fppc_id', 'treasurer', 'is_terminated', 'status', 'filer_name', 'filer_type', 'city', 'state', 'zip']
 df6
 
 # %%
