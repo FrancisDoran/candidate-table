@@ -13,7 +13,7 @@ socrata = Socrata(auth)
 view = socrata.views.lookup('v93t-prrc')
 
 with open('output/output.csv', 'rb') as my_file:
-  (revision, job) = socrata.using_config('output_03-28-2024_01d1', view).csv(my_file)
+  (revision, job) = socrata.using_config('output_04-03-2024_6cbe', view).csv(my_file)
   # These next 2 lines are optional - once the job is started from the previous line, the
   # script can exit; these next lines just block until the job completes
   job = job.wait_for_finish(progress = lambda job: print('Job progress:', job.attributes['status']))
