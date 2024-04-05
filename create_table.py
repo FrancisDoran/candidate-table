@@ -138,8 +138,7 @@ def export_transactions(id,offset=0):
 
 # %%
 filers_response=list_filers()
-filers_response
-
+filers_response=[item for item in filers_response if item['committeeTypes'] in [['Person'],['Candidate or Officeholder'], ['Primarily Formed Measure'],['Primarily Formed Candidate']]]
 # %%
 status = [
     {
